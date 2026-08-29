@@ -1,0 +1,46 @@
+<svg viewBox="0 0 720 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title4 desc4">
+  <title id="title4">Timeline of the Palantir domestic surveillance debate</title>
+  <desc id="desc4">A timeline showing four key moments: the 2013 PRISM name-confusion denial, the 2017 Intercept/Snowden report on XKEYSCORE, Karp's public denials of surveilling Americans, and the 2025 mega-database controversy.</desc>
+  <rect width="720" height="220" fill="#F5F3EE"/>
+  <text x="360" y="28" font-family="Georgia, serif" font-size="16" font-weight="700" fill="#16233A" text-anchor="middle">Key Moments in the Domestic Surveillance Debate</text>
+
+  <line x1="60" y1="110" x2="660" y2="110" stroke="#DCE1E8" stroke-width="3"/>
+
+  <!-- 2013 -->
+  <circle cx="110" cy="110" r="7" fill="#16233A"/>
+  <text x="110" y="90" font-family="-apple-system,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#16233A" text-anchor="middle">2013</text>
+  <text x="110" y="135" font-family="-apple-system,Helvetica,Arial,sans-serif" font-size="11" fill="#4B5768" text-anchor="middle">
+    <tspan x="110" dy="0">Palantir denies</tspan>
+    <tspan x="110" dy="14">any link to NSA's</tspan>
+    <tspan x="110" dy="14">PRISM program</tspan>
+  </text>
+
+  <!-- 2017 -->
+  <circle cx="290" cy="110" r="7" fill="#C40410"/>
+  <text x="290" y="90" font-family="-apple-system,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#C40410" text-anchor="middle">2017</text>
+  <text x="290" y="135" font-family="-apple-system,Helvetica,Arial,sans-serif" font-size="11" fill="#4B5768" text-anchor="middle">
+    <tspan x="290" dy="0">The Intercept reports,</tspan>
+    <tspan x="290" dy="14">via Snowden docs, on</tspan>
+    <tspan x="290" dy="14">Palantir &amp; XKEYSCORE</tspan>
+  </text>
+
+  <!-- Ongoing -->
+  <circle cx="470" cy="110" r="7" fill="#8A6B34"/>
+  <text x="470" y="90" font-family="-apple-system,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#8A6B34" text-anchor="middle">Ongoing</text>
+  <text x="470" y="135" font-family="-apple-system,Helvetica,Arial,sans-serif" font-size="11" fill="#4B5768" text-anchor="middle">
+    <tspan x="470" dy="0">Karp repeatedly denies</tspan>
+    <tspan x="470" dy="14">surveilling U.S. citizens</tspan>
+    <tspan x="470" dy="14">in public statements</tspan>
+  </text>
+
+  <!-- 2025 -->
+  <circle cx="620" cy="110" r="7" fill="#16233A"/>
+  <text x="620" y="90" font-family="-apple-system,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#16233A" text-anchor="middle">2025</text>
+  <text x="620" y="135" font-family="-apple-system,Helvetica,Arial,sans-serif" font-size="11" fill="#4B5768" text-anchor="middle">
+    <tspan x="620" dy="0">Congress warns of a</tspan>
+    <tspan x="620" dy="14">cross-agency "mega-</tspan>
+    <tspan x="620" dy="14">database" via Foundry</tspan>
+  </text>
+
+  <text x="360" y="200" font-family="-apple-system,Helvetica,Arial,sans-serif" font-size="11" fill="#4B5768" text-anchor="middle" font-style="italic">See sourcing below for full detail on each moment</text>
+</svg>

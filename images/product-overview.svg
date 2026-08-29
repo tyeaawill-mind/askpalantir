@@ -1,0 +1,48 @@
+<svg viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title3 desc3">
+  <title id="title3">Palantir's four main products: Gotham, Foundry, AIP, and Apollo</title>
+  <desc id="desc3">A four-quadrant diagram summarizing what each of Palantir's products does and who it's built for.</desc>
+  <rect width="720" height="300" fill="#F5F3EE"/>
+  <text x="360" y="30" font-family="Georgia, serif" font-size="17" font-weight="700" fill="#16233A" text-anchor="middle">Palantir's Product Line, at a Glance</text>
+
+  <!-- Gotham -->
+  <rect x="30" y="52" width="320" height="105" rx="4" fill="#FFFFFF" stroke="#DCE1E8" stroke-width="1.5"/>
+  <rect x="30" y="52" width="6" height="105" fill="#16233A"/>
+  <text x="52" y="76" font-family="Georgia, serif" font-size="16" font-weight="700" fill="#16233A">Gotham</text>
+  <text x="52" y="96" font-family="-apple-system,Helvetica,Arial,sans-serif" font-size="12" fill="#4B5768">
+    <tspan x="52" dy="0">Government, defense &amp; intelligence.</tspan>
+    <tspan x="52" dy="17">Integrates disparate data sources</tspan>
+    <tspan x="52" dy="17">for analysts and operators.</tspan>
+  </text>
+
+  <!-- Foundry -->
+  <rect x="370" y="52" width="320" height="105" rx="4" fill="#FFFFFF" stroke="#DCE1E8" stroke-width="1.5"/>
+  <rect x="370" y="52" width="6" height="105" fill="#C40410"/>
+  <text x="392" y="76" font-family="Georgia, serif" font-size="16" font-weight="700" fill="#16233A">Foundry</text>
+  <text x="392" y="96" font-family="-apple-system,Helvetica,Arial,sans-serif" font-size="12" fill="#4B5768">
+    <tspan x="392" dy="0">Commercial enterprises. Same core</tspan>
+    <tspan x="392" dy="17">integration approach, applied to</tspan>
+    <tspan x="392" dy="17">business operations.</tspan>
+  </text>
+
+  <!-- AIP -->
+  <rect x="30" y="167" width="320" height="105" rx="4" fill="#FFFFFF" stroke="#DCE1E8" stroke-width="1.5"/>
+  <rect x="30" y="167" width="6" height="105" fill="#8A6B34"/>
+  <text x="52" y="191" font-family="Georgia, serif" font-size="16" font-weight="700" fill="#16233A">AIP</text>
+  <text x="52" y="211" font-family="-apple-system,Helvetica,Arial,sans-serif" font-size="12" fill="#4B5768">
+    <tspan x="52" dy="0">Artificial Intelligence Platform.</tspan>
+    <tspan x="52" dy="17">Connects LLMs to a customer's</tspan>
+    <tspan x="52" dy="17">own operational data.</tspan>
+  </text>
+
+  <!-- Apollo -->
+  <rect x="370" y="167" width="320" height="105" rx="4" fill="#FFFFFF" stroke="#DCE1E8" stroke-width="1.5"/>
+  <rect x="370" y="167" width="6" height="105" fill="#4B5768"/>
+  <text x="392" y="191" font-family="Georgia, serif" font-size="16" font-weight="700" fill="#16233A">Apollo</text>
+  <text x="392" y="211" font-family="-apple-system,Helvetica,Arial,sans-serif" font-size="12" fill="#4B5768">
+    <tspan x="392" dy="0">The infrastructure layer. Deploys</tspan>
+    <tspan x="392" dy="17">updates to the other products,</tspan>
+    <tspan x="392" dy="17">even in disconnected environments.</tspan>
+  </text>
+
+  <text x="360" y="292" font-family="-apple-system,Helvetica,Arial,sans-serif" font-size="11" fill="#4B5768" text-anchor="middle" font-style="italic">Based on Palantir's own public product descriptions</text>
+</svg>

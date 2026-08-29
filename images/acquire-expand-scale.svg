@@ -1,0 +1,49 @@
+<svg viewBox="0 0 720 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Palantir's Acquire, Expand, Scale customer relationship model</title>
+  <desc id="desc">A three-stage diagram showing how a Palantir customer relationship moves from an unprofitable Acquire phase, through an approaching-profitability Expand phase, to a profitable Scale phase.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#4B5768"/>
+    </marker>
+  </defs>
+  <rect width="720" height="260" fill="#F5F3EE"/>
+
+  <!-- Stage 1: Acquire -->
+  <rect x="30" y="60" width="190" height="130" rx="4" fill="#FFFFFF" stroke="#DCE1E8" stroke-width="1.5"/>
+  <rect x="30" y="60" width="190" height="8" fill="#C40410"/>
+  <text x="125" y="100" font-family="Georgia, serif" font-size="20" font-weight="700" fill="#16233A" text-anchor="middle">Acquire</text>
+  <text x="125" y="128" font-family="-apple-system,Helvetica,Arial,sans-serif" font-size="12.5" fill="#4B5768" text-anchor="middle">
+    <tspan x="125" dy="0">Engineers embed with the</tspan>
+    <tspan x="125" dy="16">customer, tailoring the</tspan>
+    <tspan x="125" dy="16">platform to their problem</tspan>
+  </text>
+  <text x="125" y="178" font-family="-apple-system,Helvetica,Arial,sans-serif" font-size="12" font-weight="600" fill="#C40410" text-anchor="middle">Runs at a loss</text>
+
+  <line x1="222" y1="125" x2="258" y2="125" stroke="#4B5768" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Stage 2: Expand -->
+  <rect x="265" y="60" width="190" height="130" rx="4" fill="#FFFFFF" stroke="#DCE1E8" stroke-width="1.5"/>
+  <rect x="265" y="60" width="190" height="8" fill="#8A6B34"/>
+  <text x="360" y="100" font-family="Georgia, serif" font-size="20" font-weight="700" fill="#16233A" text-anchor="middle">Expand</text>
+  <text x="360" y="128" font-family="-apple-system,Helvetica,Arial,sans-serif" font-size="12.5" fill="#4B5768" text-anchor="middle">
+    <tspan x="360" dy="0">Customer applies the</tspan>
+    <tspan x="360" dy="16">platform to more use</tspan>
+    <tspan x="360" dy="16">cases across the org</tspan>
+  </text>
+  <text x="360" y="178" font-family="-apple-system,Helvetica,Arial,sans-serif" font-size="12" font-weight="600" fill="#8A6B34" text-anchor="middle">Approaching profitability</text>
+
+  <line x1="457" y1="125" x2="493" y2="125" stroke="#4B5768" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Stage 3: Scale -->
+  <rect x="500" y="60" width="190" height="130" rx="4" fill="#FFFFFF" stroke="#DCE1E8" stroke-width="1.5"/>
+  <rect x="500" y="60" width="190" height="8" fill="#16233A"/>
+  <text x="595" y="100" font-family="Georgia, serif" font-size="20" font-weight="700" fill="#16233A" text-anchor="middle">Scale</text>
+  <text x="595" y="128" font-family="-apple-system,Helvetica,Arial,sans-serif" font-size="12.5" fill="#4B5768" text-anchor="middle">
+    <tspan x="595" dy="0">Other teams build their</tspan>
+    <tspan x="595" dy="16">own applications on</tspan>
+    <tspan x="595" dy="16">top of the platform</tspan>
+  </text>
+  <text x="595" y="178" font-family="-apple-system,Helvetica,Arial,sans-serif" font-size="12" font-weight="600" fill="#16233A" text-anchor="middle">Clearly profitable</text>
+
+  <text x="360" y="230" font-family="-apple-system,Helvetica,Arial,sans-serif" font-size="11.5" fill="#4B5768" text-anchor="middle" font-style="italic">Palantir's own description of how a customer relationship matures over time</text>
+</svg>
