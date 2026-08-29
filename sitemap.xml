@@ -1,25 +1,72 @@
-<?xml version="1.0" encoding="UTF-8"?>
+This XML file does not appear to have any style information associated with it. The document tree is shown below.
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://askpalantir.com/index.html</loc></url>
-  <url><loc>https://askpalantir.com/about.html</loc></url>
-  <url><loc>https://askpalantir.com/privacy-policy.html</loc></url>
-  <url><loc>https://askpalantir.com/terms.html</loc></url>
-  <url><loc>https://askpalantir.com/contact.html</loc></url>
-  <url><loc>https://askpalantir.com/pages/what-does-palantir-do.html</loc></url>
-  <url><loc>https://askpalantir.com/pages/how-does-palantir-make-money.html</loc></url>
-  <url><loc>https://askpalantir.com/pages/who-founded-palantir.html</loc></url>
-  <url><loc>https://askpalantir.com/pages/what-does-the-name-palantir-mean.html</loc></url>
-  <url><loc>https://askpalantir.com/pages/is-palantir-a-defense-contractor.html</loc></url>
-  <url><loc>https://askpalantir.com/pages/who-are-palantirs-biggest-customers.html</loc></url>
-  <url><loc>https://askpalantir.com/pages/why-is-palantir-stock-so-volatile.html</loc></url>
-  <url><loc>https://askpalantir.com/pages/what-is-a-forward-deployed-engineer.html</loc></url>
-  <url><loc>https://askpalantir.com/pages/how-hard-is-it-to-get-a-job-at-palantir.html</loc></url>
-  <url><loc>https://askpalantir.com/pages/palantir-vs-snowflake.html</loc></url>
-  <url><loc>https://askpalantir.com/pages/palantir-vs-c3ai.html</loc></url>
-  <url><loc>https://askpalantir.com/pages/is-palantir-a-monopoly.html</loc></url>
-  <url><loc>https://askpalantir.com/pages/does-palantir-work-with-ice.html</loc></url>
-  <url><loc>https://askpalantir.com/pages/what-is-palantirs-irs-contract.html</loc></url>
-  <url><loc>https://askpalantir.com/pages/is-palantir-ethical.html</loc></url>
-  <url><loc>https://askpalantir.com/pages/does-palantir-spy-on-americans.html</loc></url>
-  <url><loc>https://askpalantir.com/pages/palantir-nhs-contract-controversy.html</loc></url>
+<url>
+<loc>https://askpalantir.com/index.html</loc>
+</url>
+<url>
+<loc>https://askpalantir.com/about.html</loc>
+</url>
+<url>
+<loc>https://askpalantir.com/privacy-policy.html</loc>
+</url>
+<url>
+<loc>https://askpalantir.com/terms.html</loc>
+</url>
+<url>
+<loc>https://askpalantir.com/contact.html</loc>
+</url>
+<url>
+<loc>https://askpalantir.com/reflections.html</loc>
+</url>
+<url>
+<loc>https://askpalantir.com/pages/what-does-palantir-do.html</loc>
+</url>
+<url>
+<loc>https://askpalantir.com/pages/how-does-palantir-make-money.html</loc>
+</url>
+<url>
+<loc>https://askpalantir.com/pages/who-founded-palantir.html</loc>
+</url>
+<url>
+<loc>https://askpalantir.com/pages/what-does-the-name-palantir-mean.html</loc>
+</url>
+<url>
+<loc>https://askpalantir.com/pages/is-palantir-a-defense-contractor.html</loc>
+</url>
+<url>
+<loc>https://askpalantir.com/pages/who-are-palantirs-biggest-customers.html</loc>
+</url>
+<url>
+<loc>https://askpalantir.com/pages/why-is-palantir-stock-so-volatile.html</loc>
+</url>
+<url>
+<loc>https://askpalantir.com/pages/what-is-a-forward-deployed-engineer.html</loc>
+</url>
+<url>
+<loc>https://askpalantir.com/pages/how-hard-is-it-to-get-a-job-at-palantir.html</loc>
+</url>
+<url>
+<loc>https://askpalantir.com/pages/palantir-vs-snowflake.html</loc>
+</url>
+<url>
+<loc>https://askpalantir.com/pages/palantir-vs-c3ai.html</loc>
+</url>
+<url>
+<loc>https://askpalantir.com/pages/is-palantir-a-monopoly.html</loc>
+</url>
+<url>
+<loc>https://askpalantir.com/pages/does-palantir-work-with-ice.html</loc>
+</url>
+<url>
+<loc>https://askpalantir.com/pages/what-is-palantirs-irs-contract.html</loc>
+</url>
+<url>
+<loc>https://askpalantir.com/pages/is-palantir-ethical.html</loc>
+</url>
+<url>
+<loc>https://askpalantir.com/pages/does-palantir-spy-on-americans.html</loc>
+</url>
+<url>
+<loc>https://askpalantir.com/pages/palantir-nhs-contract-controversy.html</loc>
+</url>
 </urlset>
