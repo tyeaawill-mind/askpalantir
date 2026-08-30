@@ -64,14 +64,19 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .site-nav a:hover { color: var(--accent); }
 .site-nav a.reflections-link {
   color: var(--accent);
-  font-weight: 600;
-  border: 1px solid var(--accent);
-  padding: 0.3rem 0.7rem;
-  border-radius: 3px;
+  border: none;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  transition: transform 0.15s ease, filter 0.15s ease;
 }
 .site-nav a.reflections-link:hover {
-  background: var(--accent);
-  color: var(--paper-raised);
+  transform: scale(1.06);
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.15));
 }
 
 .disclaimer-strip {
