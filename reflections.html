@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -28,16 +29,83 @@ j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src=
 <!-- End Google Tag Manager (noscript) -->
 <header class="site-header">
   <div class="site-header-inner">
-    <a class="wordmark" href="index.html">Ask<span>Palantir</span></a>
+    <div>
+      <a class="wordmark" href="index.html">Ask<span>Palantir</span></a>
+      <a href="index.html" class="home-pill" aria-label="Home">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg>
+        Home
+      </a>
+    </div>
     <nav class="site-nav">
       <a href="index.html#basics">Company &amp; Finance</a>
       <a href="index.html#comparison">Comparisons</a>
       <a href="index.html#controversy">Controversies</a>
-      <a href="reflections.html">People's Reflections</a>
+      <a href="reflections.html" class="reflections-link" aria-label="People's Reflections — share your thoughts on Palantir" title="People's Reflections">
+        <svg viewBox="0 0 160 150" width="62" height="58" aria-hidden="true">
+          <defs>
+            <path id="reflect-arc-reflections" d="M 26,70 A 54,54 0 0 1 134,70" fill="none"/>
+          </defs>
+          <circle cx="80" cy="70" r="45" fill="none" stroke="#C40410" stroke-width="2.2"/>
+          <circle cx="68" cy="64" r="6.5" fill="#C40410"/>
+          <circle cx="92" cy="64" r="6.5" fill="#C40410"/>
+          <path d="M58,52 Q68,42 78,52" fill="none" stroke="#C40410" stroke-width="2.4" stroke-linecap="round"/>
+          <path d="M82,52 Q92,42 102,52" fill="none" stroke="#C40410" stroke-width="2.4" stroke-linecap="round"/>
+          <path d="M62,84 Q80,98 98,84" fill="none" stroke="#C40410" stroke-width="2.6" stroke-linecap="round"/>
+          <text font-family="-apple-system,Helvetica,Arial,sans-serif" font-weight="700" font-size="13.5" letter-spacing="0.5" fill="#16233A" text-anchor="middle">
+            <textPath href="#reflect-arc-reflections" startOffset="50%">PEOPLE'S  REFLECTIONS</textPath>
+          </text>
+          <text x="80" y="136" font-family="-apple-system,Helvetica,Arial,sans-serif" font-weight="700" font-size="15" letter-spacing="4" fill="#16233A" text-anchor="middle">BLOG</text>
+        </svg>
+      </a>
     </nav>
   </div>
 </header>
 <div class="disclaimer-strip">Independent explainer — not affiliated with Palantir Technologies Inc.</div>
+<style>
+@keyframes tailWhip {
+  0%   { transform: rotate(-18deg); }
+  25%  { transform: rotate(28deg); }
+  50%  { transform: rotate(-10deg); }
+  75%  { transform: rotate(20deg); }
+  100% { transform: rotate(-18deg); }
+}
+@keyframes bodyWobble {
+  0%   { transform: rotate(-3deg); }
+  25%  { transform: rotate(5deg); }
+  50%  { transform: rotate(-2deg); }
+  75%  { transform: rotate(4deg); }
+  100% { transform: rotate(-3deg); }
+}
+@keyframes headTurn {
+  0%   { transform: rotate(6deg); }
+  50%  { transform: rotate(-8deg); }
+  100% { transform: rotate(6deg); }
+}
+.cat-tailG { transform-origin: 118px 150px; animation: tailWhip 2.4s ease-in-out infinite; }
+.cat-bodyG { transform-origin: 100px 150px; animation: bodyWobble 2.4s ease-in-out infinite; }
+.cat-headG { transform-origin: 100px 110px; animation: headTurn 2.4s ease-in-out infinite; }
+.cat-wrap { display: flex; justify-content: center; margin: 0.5rem 0 0.5rem; }
+</style>
+<div class="cat-wrap">
+  <svg width="110" height="110" viewBox="0 0 200 200" role="img" aria-label="A small animated illustration of a cat anxiously chasing its own tail">
+    <g class="cat-bodyG">
+      <ellipse cx="100" cy="150" rx="34" ry="26" fill="none" stroke="#16233A" stroke-width="2.4"/>
+      <g class="cat-tailG">
+        <path d="M118,150 Q150,140 155,105 Q158,85 145,80" fill="none" stroke="#C40410" stroke-width="3.2" stroke-linecap="round"/>
+      </g>
+      <g class="cat-headG">
+        <circle cx="100" cy="110" r="24" fill="#F5F3EE" stroke="#16233A" stroke-width="2.4"/>
+        <path d="M82,94 L78,78 L92,90 Z" fill="#F5F3EE" stroke="#16233A" stroke-width="2"/>
+        <path d="M118,94 L122,78 L108,90 Z" fill="#F5F3EE" stroke="#16233A" stroke-width="2"/>
+        <circle cx="91" cy="108" r="3.2" fill="#16233A"/>
+        <circle cx="109" cy="108" r="3.2" fill="#16233A"/>
+        <path d="M87,98 Q91,94 95,97" fill="none" stroke="#16233A" stroke-width="1.6" stroke-linecap="round"/>
+        <path d="M105,97 Q109,94 113,98" fill="none" stroke="#16233A" stroke-width="1.6" stroke-linecap="round"/>
+        <path d="M94,120 Q100,124 106,120" fill="none" stroke="#16233A" stroke-width="1.8" stroke-linecap="round"/>
+      </g>
+    </g>
+  </svg>
+</div>
 <main>
   <p class="eyebrow">Community</p>
   <article>
