@@ -250,6 +250,26 @@ hr { border: none; border-top: 1px solid var(--rule); margin: 2.4rem 0 1.4rem; }
   text-align: center;
 }
 
+/* Related reading */
+.related-reading {
+  border-top: 1px solid var(--rule);
+  padding-top: 1.4rem;
+}
+.related-title {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin: 0 0 0.7rem;
+}
+.related-reading ul {
+  margin: 0 0 1.6rem;
+  padding-left: 1.2rem;
+}
+.related-reading li { margin-bottom: 0.4rem; }
+.related-reading a { color: var(--accent); }
+
 /* Article comments */
 .comments-lede {
   font-family: var(--mono);
