@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K9VKSQVS');</script>
+<!-- End Google Tag Manager -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What Is Palantir Apollo? | Ask Palantir</title>
+<meta name="description" content="The deployment layer that keeps Palantir's software running everywhere, even offline.">
+<link rel="stylesheet" href="../style.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1341126748601900" crossorigin="anonymous"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "What Is Palantir Apollo?",
+  "description": "The deployment layer that keeps Palantir's software running everywhere, even offline.",
+  "url": "https://askpalantir.com/pages/what-is-palantir-apollo.html",
+  "mainEntityOfPage": "https://askpalantir.com/pages/what-is-palantir-apollo.html",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ask Palantir",
+    "url": "https://askpalantir.com"
+  }
+}
+</script>
+</head>
+<body class="">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K9VKSQVS"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<header class="site-header">
+  <div class="site-header-inner">
+    <div>
+      <a class="wordmark" href="../index.html">Ask<span>Palantir</span></a>
+      <a href="../index.html" class="home-pill" aria-label="Home">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg>
+        Home
+      </a>
+    </div>
+    <nav class="site-nav">
+      <a href="../index.html#basics">Company &amp; Finance</a>
+      <a href="../index.html#comparison">Comparisons</a>
+      <a href="../index.html#controversy">Controversies</a>
+      <a href="../reflections.html" class="reflections-link" aria-label="People's Reflections — share your thoughts on Palantir" title="People's Reflections">
+        <svg viewBox="0 0 160 150" width="62" height="58" aria-hidden="true">
+          <defs>
+            <path id="reflect-arc-what-is-palantir-apollo" d="M 26,70 A 54,54 0 0 1 134,70" fill="none"/>
+          </defs>
+          <circle cx="80" cy="70" r="45" fill="none" stroke="#C40410" stroke-width="2.2"/>
+          <circle cx="68" cy="64" r="6.5" fill="#C40410"/>
+          <circle cx="92" cy="64" r="6.5" fill="#C40410"/>
+          <path d="M58,52 Q68,42 78,52" fill="none" stroke="#C40410" stroke-width="2.4" stroke-linecap="round"/>
+          <path d="M82,52 Q92,42 102,52" fill="none" stroke="#C40410" stroke-width="2.4" stroke-linecap="round"/>
+          <path d="M62,84 Q80,98 98,84" fill="none" stroke="#C40410" stroke-width="2.6" stroke-linecap="round"/>
+          <text font-family="-apple-system,Helvetica,Arial,sans-serif" font-weight="700" font-size="13.5" letter-spacing="0.5" fill="#16233A" text-anchor="middle">
+            <textPath href="#reflect-arc-what-is-palantir-apollo" startOffset="50%">PEOPLE'S  REFLECTIONS</textPath>
+          </text>
+          <text x="80" y="136" font-family="-apple-system,Helvetica,Arial,sans-serif" font-weight="700" font-size="15" letter-spacing="4" fill="#16233A" text-anchor="middle">BLOG</text>
+        </svg>
+      </a>
+    </nav>
+  </div>
+</header>
+<div class="disclaimer-strip">Independent explainer — not affiliated with Palantir Technologies Inc.</div>
+<main>
+  <p class="eyebrow">Company & Finance</p>
+  <article>
+    <h1>What Is Palantir Apollo?</h1>
+<p class="lede">Not affiliated with Palantir Technologies Inc. This page is an independent explainer based on publicly available sources.</p>
+<p>Apollo is the least publicly discussed of Palantir's four core products, but it's arguably what makes the other three actually usable in the environments Palantir's customers operate in — including classified networks that have no regular internet connection at all.</p>
+<h2>What it actually does</h2>
+<p>Apollo is a software deployment and management platform, not a data or AI tool like Gotham, Foundry, or AIP. Its job is to continuously and safely push updates to Palantir's software across every environment it runs in — cloud, on-premises, and fully disconnected "air-gapped" networks — without requiring engineers to manually manage each installation. Palantir describes Apollo as encoding operational best practices refined over years of running mission-critical software, using a "compliance-aware change management engine" to orchestrate upgrades automatically while meeting strict accreditation requirements like FedRAMP and the Department of Defense's Impact Level 5 and 6 standards.</p>
+<h2>Hubs and Spokes</h2>
+<p>Apollo's architecture centers on two components. Hub environments receive telemetry from connected environments and issue update plans; Spoke environments are the individual deployments — a customer's cloud instance, an on-premises server, an air-gapped facility — that report status back to their managing Hub and execute the plans it issues. A single Hub can manage many Spokes, and Apollo's pull-based model means a locked-down network never has to open an inbound connection to Palantir for updates to reach it.</p>
+<h2>Why this matters beyond convenience</h2>
+<p>Every artifact Apollo deploys is cryptographically signed and independently verifiable, with a full auditable deployment history — a security property that matters as much as the automation itself in defense and regulated environments, where knowing exactly what code is running, and where it came from, is treated as seriously as whether it works.</p>
+<h2>Sold as a standalone product, too</h2>
+<p>Apollo isn't limited to deploying Palantir's own software. The company also sells it independently to other organizations facing the same distribution problem — vendors and operators managing fleets of industrial equipment, defense systems, or multi-cloud products with per-customer isolation, who need to ship updates without a vendor tunnel into their network. A related offering, FedStart, lets other software vendors deploy their own products inside Palantir's already-accredited FedRAMP and Impact Level environments to sell to federal customers on that basis.</p>
+<h2>How it relates to Palantir's other products</h2>
+<p>Apollo is the infrastructure layer underneath Gotham, Foundry, and AIP — see our main explainer on what Palantir does for how all four fit together.</p>
+<hr>
+<div class="sourcing">Sources consulted: Palantir's own documentation (palantir.com/docs/apollo), Palantir's Apollo technical white paper, BD Emerson, System Soft Technologies. This page will be updated as the platform evolves.</div>
+  </article>
+
+  <div class="related-reading">
+    <p class="related-title">Related reading</p>
+    <ul>
+      <li><a href="what-does-palantir-do.html">What Does Palantir Do?</a></li>
+      <li><a href="what-is-palantir-gotham.html">What Is Palantir Gotham?</a></li>
+      <li><a href="what-is-palantir-foundry.html">What Is Palantir Foundry?</a></li>
+    </ul>
+  </div>
+
+  <div class="article-comments">
+    <p class="comments-lede">Have thoughts on this page? Join the discussion below, or start a new one in <a href="../reflections.html">People's Reflections</a>.</p>
+    <div id="disqus_thread"></div>
+    <script>
+      var disqus_config = function () {
+        this.page.url = "https://askpalantir.com/pages/what-is-palantir-apollo.html";
+        this.page.identifier = "what-is-palantir-apollo";
+      };
+      (function() {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://askpalantir.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the comments.</noscript>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <p>Ask Palantir is an independent, reader-supported explainer project. Not affiliated with, endorsed by, or sponsored by Palantir Technologies Inc. or any of its subsidiaries.</p>
+    <p><a href="../about.html">About</a> &middot; <a href="../privacy-policy.html">Privacy Policy</a> &middot; <a href="../terms.html">Terms of Use</a> &middot; <a href="../contact.html">Contact</a> &middot; <a href="../faq.html">FAQ</a></p>
+  </div>
+</footer>
+</body>
+</html>
