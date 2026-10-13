@@ -1,0 +1,354 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>Ask Palantir</title>
+    <link>https://askpalantir.com/</link>
+    <description>Independent, fully sourced explainer site about Palantir Technologies. Company basics, financial analysis, competitor comparisons, and controversy coverage presented from multiple sides. Not affiliated with Palantir.</description>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 11 Oct 2026 08:18:26 +0000</lastBuildDate>
+    <atom:link href="https://askpalantir.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Does Palantir Spy on Americans?</title>
+      <link>https://askpalantir.com/pages/does-palantir-spy-on-americans.html</link>
+      <guid isPermaLink="true">https://askpalantir.com/pages/does-palantir-spy-on-americans.html</guid>
+      <description>Palantir's CEO says no. The Intercept's NSA reporting says otherwise. Here are the actual documented facts on both sides.</description>
+      <category>Controversies</category>
+    </item>
+    <item>
+      <title>Does Palantir Work With ICE?</title>
+      <link>https://askpalantir.com/pages/does-palantir-work-with-ice.html</link>
+      <guid isPermaLink="true">https://askpalantir.com/pages/does-palantir-work-with-ice.html</guid>
+      <description>Yes. Palantir has held ICE contracts since 2011, including a new $30M ImmigrationOS deal. What's documented on both sides, fully sourced.</description>
+      <category>Controversies</category>
+    </item>
+    <item>
+      <title>How Does Palantir Make Money?</title>
+      <link>https://askpalantir.com/pages/how-does-palantir-make-money.html</link>
+      <guid isPermaLink="true">https://askpalantir.com/pages/how-does-palantir-make-money.html</guid>
+      <description>Palantir sells software subscriptions, not consulting, and posts 80%+ gross margins. Here's exactly how the business model works.</description>
+      <category>Company &amp; Finance</category>
+    </item>
+    <item>
+      <title>How Does Palantir Report Earnings?</title>
+      <link>https://askpalantir.com/pages/how-does-palantir-report-earnings.html</link>
+      <guid isPermaLink="true">https://askpalantir.com/pages/how-does-palantir-report-earnings.html</guid>
+      <description>The reporting cadence, and a recent pattern of beats.</description>
+      <category>Company &amp; Finance</category>
+    </item>
+    <item>
+      <title>How Hard Is It to Get a Job at Palantir?</title>
+      <link>https://askpalantir.com/pages/how-hard-is-it-to-get-a-job-at-palantir.html</link>
+      <guid isPermaLink="true">https://askpalantir.com/pages/how-hard-is-it-to-get-a-job-at-palantir.html</guid>
+      <description>What the actual interview data shows, beyond the internet folklore.</description>
+      <category>Company &amp; Finance</category>
+    </item>
+    <item>
+      <title>What Is Palantir's Stock Ticker, and How Do You Buy It?</title>
+      <link>https://askpalantir.com/pages/how-to-buy-palantir-stock.html</link>
+      <guid isPermaLink="true">https://askpalantir.com/pages/how-to-buy-palantir-stock.html</guid>
+      <description>PLTR trades on Nasdaq. Here's exactly how to actually buy shares, step by step.</description>
+      <category>Company &amp; Finance</category>
+    </item>
+    <item>
+      <title>How to Read Palantir's Financial Statements</title>
+      <link>https://askpalantir.com/pages/how-to-read-palantirs-financial-statements.html</link>
+      <guid isPermaLink="true">https://askpalantir.com/pages/how-to-read-palantirs-financial-statements.html</guid>
+      <description>10-Ks, audits, and what the numbers actually mean.</description>
+      <category>Company &amp; Finance</category>
+    </item>
+    <item>
+      <title>Is Palantir a Defense Contractor?</title>
+      <link>https://askpalantir.com/pages/is-palantir-a-defense-contractor.html</link>
+      <guid isPermaLink="true">https://askpalantir.com/pages/is-palantir-a-defense-contractor.html</guid>
+      <description>Yes — Palantir holds active U.S. and allied military, intelligence, and law enforcement contracts. Here's exactly which ones, sourced.</description>
+      <category>Company &amp; Finance</category>
+    </item>
+    <item>
+      <title>Is Palantir a Monopoly?</title>
+      <link>https://askpalantir.com/pages/is-palantir-a-monopoly.html</link>
+      <guid isPermaLink="true">https://askpalantir.com/pages/is-palantir-a-monopoly.html</guid>
+      <description>No formal finding says so — but here's why the word keeps coming up anyway.</description>
+      <category>Comparisons</category>
+    </item>
+    <item>
+      <title>Is Palantir Ethical? The Debate, From Both Sides</title>
+      <link>https://askpalantir.com/pages/is-palantir-ethical.html</link>
+      <guid isPermaLink="true">https://askpalantir.com/pages/is-palantir-ethical.html</guid>
+      <description>Human rights groups say one thing, the company says another — the documented case on both sides.</description>
+      <category>Controversies</category>
+    </item>
+    <item>
+      <title>A Timeline of Palantir's Major Controversies</title>
+      <link>https://askpalantir.com/pages/palantir-controversies-timeline.html</link>
+      <guid isPermaLink="true">https://askpalantir.com/pages/palantir-controversies-timeline.html</guid>
+      <description>From a 2011 ICE contract to a 2026 NHS fight — every major controversy, dated.</description>
+      <category>Controversies</category>
+    </item>
+    <item>
+      <title>What Is the Palantir NHS Contract Controversy?</title>
+      <link>https://askpalantir.com/pages/palantir-nhs-contract-controversy.html</link>
+      <guid isPermaLink="true">https://askpalantir.com/pages/palantir-nhs-contract-controversy.html</guid>
+      <description>The UK's £330m data-platform fight, explained.</description>
+      <category>Controversies</category>
+    </item>
+    <item>
+      <title>What Is Palantir's Rio Tinto Partnership?</title>
+      <link>https://askpalantir.com/pages/palantir-rio-tinto-partnership.html</link>
+      <guid isPermaLink="true">https://askpalantir.com/pages/palantir-rio-tinto-partnership.html</guid>
+      <description>A 2021 mining-industry deal that's since expanded to cover Palantir's AI platform too.</description>
+      <category>Company &amp; Finance</category>
+    </item>
+    <item>
+      <title>Palantir vs. Anduril: What's the Actual Difference?</title>
+      <link>https://askpalantir.com/pages/palantir-vs-anduril.html</link>
+      <guid isPermaLink="true">https://askpalantir.com/pages/palantir-vs-anduril.html</guid>
+      <description>America's two most-watched defense-tech companies — now rivals and partners at once.</description>
+      <category>Comparisons</category>
+    </item>
+    <item>
+      <title>Palantir vs. C3.ai: What's the Actual Difference?</title>
+      <link>https://askpalantir.com/pages/palantir-vs-c3ai.html</link>
+      <guid isPermaLink="true">https://askpalantir.com/pages/palantir-vs-c3ai.html</guid>
+      <description>A widening financial gap between two AI platforms.</description>
+      <category>Comparisons</category>
+    </item>
+    <item>
+      <title>Palantir vs. Databricks: What's the Actual Difference?</title>
+      <link>https://askpalantir.com/pages/palantir-vs-databricks.html</link>
+      <guid isPermaLink="true">https://askpalantir.com/pages/palantir-vs-databricks.html</guid>
+      <description>Data engineering versus operational AI — and now, strategic partners too.</description>
+      <category>Comparisons</category>
+    </item>
+    <item>
+      <title>Palantir vs. Nvidia: A Financial Comparison</title>
+      <link>https://askpalantir.com/pages/palantir-vs-nvidia.html</link>
+      <guid isPermaLink="true">https://askpalantir.com/pages/palantir-vs-nvidia.html</guid>
+      <description>Similar growth rates, wildly different valuations — the numbers, compared.</description>
+      <category>Comparisons</category>
+    </item>
+    <item>
+      <title>Palantir vs. SAP: Rivals, or Something Else?</title>
+      <link>https://askpalantir.com/pages/palantir-vs-sap.html</link>
+      <guid isPermaLink="true">https://askpalantir.com/pages/palantir-vs-sap.html</guid>
+      <description>From rivals to strategic partners on ERP modernization.</description>
+      <category>Comparisons</category>
+    </item>
+    <item>
+      <title>Palantir vs. Snowflake: What's the Actual Difference?</title>
+      <link>https://askpalantir.com/pages/palantir-vs-snowflake.html</link>
+      <guid isPermaLink="true">https://askpalantir.com/pages/palantir-vs-snowflake.html</guid>
+      <description>Two different bets on the enterprise data stack.</description>
+      <category>Comparisons</category>
+    </item>
+    <item>
+      <title>Palantir vs. SpaceX: Government Alignment Compared</title>
+      <link>https://askpalantir.com/pages/palantir-vs-spacex-government-alignment.html</link>
+      <guid isPermaLink="true">https://askpalantir.com/pages/palantir-vs-spacex-government-alignment.html</guid>
+      <description>Different agencies, different dependency, different political exposure.</description>
+      <category>Comparisons</category>
+    </item>
+    <item>
+      <title>Palantir vs. SpaceX: IPO Comparison</title>
+      <link>https://askpalantir.com/pages/palantir-vs-spacex-ipo-comparison.html</link>
+      <guid isPermaLink="true">https://askpalantir.com/pages/palantir-vs-spacex-ipo-comparison.html</guid>
+      <description>Direct listing vs. traditional IPO — how each company actually went public.</description>
+      <category>Comparisons</category>
+    </item>
+    <item>
+      <title>Palantir vs. SpaceX: Management and Leadership SWOT</title>
+      <link>https://askpalantir.com/pages/palantir-vs-spacex-management-swot.html</link>
+      <guid isPermaLink="true">https://askpalantir.com/pages/palantir-vs-spacex-management-swot.html</guid>
+      <description>Karp vs. Musk — strengths, weaknesses, opportunities, and threats.</description>
+      <category>Comparisons</category>
+    </item>
+    <item>
+      <title>Palantir vs. SpaceX: Financial Risk and Reward Compared</title>
+      <link>https://askpalantir.com/pages/palantir-vs-spacex-risk-reward.html</link>
+      <guid isPermaLink="true">https://askpalantir.com/pages/palantir-vs-spacex-risk-reward.html</guid>
+      <description>Two very different risk profiles, not just two different companies.</description>
+      <category>Comparisons</category>
+    </item>
+    <item>
+      <title>Palantir vs. SpaceX: Total Addressable Market (TAM) Comparison</title>
+      <link>https://askpalantir.com/pages/palantir-vs-spacex-tam-comparison.html</link>
+      <guid isPermaLink="true">https://askpalantir.com/pages/palantir-vs-spacex-tam-comparison.html</guid>
+      <description>Two huge, contested market-size claims, compared side by side.</description>
+      <category>Comparisons</category>
+    </item>
+    <item>
+      <title>Palantir vs. SpaceX: A Financial and Stock Comparison</title>
+      <link>https://askpalantir.com/pages/palantir-vs-spacex.html</link>
+      <guid isPermaLink="true">https://askpalantir.com/pages/palantir-vs-spacex.html</guid>
+      <description>Now a real stock-vs-stock comparison, since SpaceX's 2026 IPO.</description>
+      <category>Comparisons</category>
+    </item>
+    <item>
+      <title>Palantir's Competitive Vulnerabilities, Benchmarked Against Its Biggest Tech Peers</title>
+      <link>https://askpalantir.com/pages/palantirs-competitive-vulnerabilities.html</link>
+      <guid isPermaLink="true">https://askpalantir.com/pages/palantirs-competitive-vulnerabilities.html</guid>
+      <description>Palantir's real risk factors, next to SpaceX, TSMC, Nvidia, Alphabet, and Meta.</description>
+      <category>Comparisons</category>
+    </item>
+    <item>
+      <title>Palantir's Total Addressable Market, in Context</title>
+      <link>https://askpalantir.com/pages/palantirs-tam-in-context.html</link>
+      <guid isPermaLink="true">https://askpalantir.com/pages/palantirs-tam-in-context.html</guid>
+      <description>How Palantir's claimed market opportunity stacks up against five major tech peers.</description>
+      <category>Comparisons</category>
+    </item>
+    <item>
+      <title>What Are Common Palantir Interview Questions?</title>
+      <link>https://askpalantir.com/pages/what-are-common-palantir-interview-questions.html</link>
+      <guid isPermaLink="true">https://askpalantir.com/pages/what-are-common-palantir-interview-questions.html</guid>
+      <description>The actual question categories, not just difficulty stats.</description>
+      <category>Company &amp; Finance</category>
+    </item>
+    <item>
+      <title>What Are Palantir's Key Financial Metrics?</title>
+      <link>https://askpalantir.com/pages/what-are-palantirs-key-financial-metrics.html</link>
+      <guid isPermaLink="true">https://askpalantir.com/pages/what-are-palantirs-key-financial-metrics.html</guid>
+      <description>Rule of 40, adjusted FCF, and what Palantir wants you to look at.</description>
+      <category>Company &amp; Finance</category>
+    </item>
+    <item>
+      <title>What Career Paths Exist at Palantir Beyond Engineering?</title>
+      <link>https://askpalantir.com/pages/what-career-paths-exist-at-palantir.html</link>
+      <guid isPermaLink="true">https://askpalantir.com/pages/what-career-paths-exist-at-palantir.html</guid>
+      <description>Sales, legal, product, and more — the fuller roster of roles.</description>
+      <category>Company &amp; Finance</category>
+    </item>
+    <item>
+      <title>What Do Analysts Say About Palantir Stock?</title>
+      <link>https://askpalantir.com/pages/what-do-analysts-say-about-palantir-stock.html</link>
+      <guid isPermaLink="true">https://askpalantir.com/pages/what-do-analysts-say-about-palantir-stock.html</guid>
+      <description>Attributed ratings and price targets — not our own recommendation.</description>
+      <category>Company &amp; Finance</category>
+    </item>
+    <item>
+      <title>What Does Palantir Do?</title>
+      <link>https://askpalantir.com/pages/what-does-palantir-do.html</link>
+      <guid isPermaLink="true">https://askpalantir.com/pages/what-does-palantir-do.html</guid>
+      <description>Palantir builds software that turns a company's or government's scattered data into one usable system. Here's exactly how, in plain terms.</description>
+      <category>Company &amp; Finance</category>
+    </item>
+    <item>
+      <title>What Does Palantir Pay? A Look at Salaries and Compensation</title>
+      <link>https://askpalantir.com/pages/what-does-palantir-pay.html</link>
+      <guid isPermaLink="true">https://askpalantir.com/pages/what-does-palantir-pay.html</guid>
+      <description>Real salary data for engineers and beyond, from two different sources.</description>
+      <category>Company &amp; Finance</category>
+    </item>
+    <item>
+      <title>What Does the Name "Palantir" Mean?</title>
+      <link>https://askpalantir.com/pages/what-does-the-name-palantir-mean.html</link>
+      <guid isPermaLink="true">https://askpalantir.com/pages/what-does-the-name-palantir-mean.html</guid>
+      <description>The Tolkien origin, and its double edge.</description>
+      <category>Company &amp; Finance</category>
+    </item>
+    <item>
+      <title>What Government Contracts Does Palantir Hold?</title>
+      <link>https://askpalantir.com/pages/what-government-contracts-does-palantir-hold.html</link>
+      <guid isPermaLink="true">https://askpalantir.com/pages/what-government-contracts-does-palantir-hold.html</guid>
+      <description>A consolidated, factual reference list by agency.</description>
+      <category>Company &amp; Finance</category>
+    </item>
+    <item>
+      <title>What Has Palantir's Revenue Growth Looked Like?</title>
+      <link>https://askpalantir.com/pages/what-has-palantirs-revenue-growth-looked-like.html</link>
+      <guid isPermaLink="true">https://askpalantir.com/pages/what-has-palantirs-revenue-growth-looked-like.html</guid>
+      <description>The actual numbers and trend, year by year.</description>
+      <category>Company &amp; Finance</category>
+    </item>
+    <item>
+      <title>What Is a Forward Deployed Engineer?</title>
+      <link>https://askpalantir.com/pages/what-is-a-forward-deployed-engineer.html</link>
+      <guid isPermaLink="true">https://askpalantir.com/pages/what-is-a-forward-deployed-engineer.html</guid>
+      <description>Palantir's most talked-about job title — engineer, consultant, and problem-solver rolled into one role.</description>
+      <category>Company &amp; Finance</category>
+    </item>
+    <item>
+      <title>What Is a Palantir AIP Bootcamp?</title>
+      <link>https://askpalantir.com/pages/what-is-a-palantir-aip-bootcamp.html</link>
+      <guid isPermaLink="true">https://askpalantir.com/pages/what-is-a-palantir-aip-bootcamp.html</guid>
+      <description>How Palantir turns a 5-day workshop into new customers.</description>
+      <category>Company &amp; Finance</category>
+    </item>
+    <item>
+      <title>What Is Palantir AIP? A Deeper Look</title>
+      <link>https://askpalantir.com/pages/what-is-palantir-aip.html</link>
+      <guid isPermaLink="true">https://askpalantir.com/pages/what-is-palantir-aip.html</guid>
+      <description>How Palantir's AI actually acts on a company's real data, not just answers questions.</description>
+      <category>Company &amp; Finance</category>
+    </item>
+    <item>
+      <title>What Is Palantir Apollo?</title>
+      <link>https://askpalantir.com/pages/what-is-palantir-apollo.html</link>
+      <guid isPermaLink="true">https://askpalantir.com/pages/what-is-palantir-apollo.html</guid>
+      <description>The deployment layer that keeps Palantir's software running everywhere, even offline.</description>
+      <category>Company &amp; Finance</category>
+    </item>
+    <item>
+      <title>What Is Palantir Foundry?</title>
+      <link>https://askpalantir.com/pages/what-is-palantir-foundry.html</link>
+      <guid isPermaLink="true">https://askpalantir.com/pages/what-is-palantir-foundry.html</guid>
+      <description>The commercial platform now driving most of Palantir's growth, explained plainly.</description>
+      <category>Company &amp; Finance</category>
+    </item>
+    <item>
+      <title>What Is Palantir Gotham?</title>
+      <link>https://askpalantir.com/pages/what-is-palantir-gotham.html</link>
+      <guid isPermaLink="true">https://askpalantir.com/pages/what-is-palantir-gotham.html</guid>
+      <description>The original government and defense platform that started the whole company.</description>
+      <category>Company &amp; Finance</category>
+    </item>
+    <item>
+      <title>What Is Palantir's Contract With the IRS?</title>
+      <link>https://askpalantir.com/pages/what-is-palantirs-irs-contract.html</link>
+      <guid isPermaLink="true">https://askpalantir.com/pages/what-is-palantirs-irs-contract.html</guid>
+      <description>The IRS has paid Palantir $130M+ since 2018 to mine tax and financial records. Here's what that software actually does.</description>
+      <category>Controversies</category>
+    </item>
+    <item>
+      <title>What Is the Palantir Ontology?</title>
+      <link>https://askpalantir.com/pages/what-is-the-palantir-ontology.html</link>
+      <guid isPermaLink="true">https://askpalantir.com/pages/what-is-the-palantir-ontology.html</guid>
+      <description>The data-mapping concept underneath every Palantir product, explained without the jargon.</description>
+      <category>Company &amp; Finance</category>
+    </item>
+    <item>
+      <title>What Was Palantir's Role in DOGE?</title>
+      <link>https://askpalantir.com/pages/what-was-palantirs-role-in-doge.html</link>
+      <guid isPermaLink="true">https://askpalantir.com/pages/what-was-palantirs-role-in-doge.html</guid>
+      <description>Real federal ties, and one serious allegation that's still unproven.</description>
+      <category>Controversies</category>
+    </item>
+    <item>
+      <title>Who Are Palantir's Biggest Customers?</title>
+      <link>https://askpalantir.com/pages/who-are-palantirs-biggest-customers.html</link>
+      <guid isPermaLink="true">https://askpalantir.com/pages/who-are-palantirs-biggest-customers.html</guid>
+      <description>From the U.S. Army to Airbus to the NHS — who actually pays Palantir, and for what.</description>
+      <category>Company &amp; Finance</category>
+    </item>
+    <item>
+      <title>Who Are Palantir's Competitors?</title>
+      <link>https://askpalantir.com/pages/who-are-palantirs-competitors.html</link>
+      <guid isPermaLink="true">https://askpalantir.com/pages/who-are-palantirs-competitors.html</guid>
+      <description>Snowflake, Anduril, Databricks, and more — the full competitive picture, by category.</description>
+      <category>Comparisons</category>
+    </item>
+    <item>
+      <title>Who Founded Palantir?</title>
+      <link>https://askpalantir.com/pages/who-founded-palantir.html</link>
+      <guid isPermaLink="true">https://askpalantir.com/pages/who-founded-palantir.html</guid>
+      <description>Thiel, Karp, PayPal, and In-Q-Tel.</description>
+      <category>Company &amp; Finance</category>
+    </item>
+    <item>
+      <title>Why Is Palantir Stock So Volatile?</title>
+      <link>https://askpalantir.com/pages/why-is-palantir-stock-so-volatile.html</link>
+      <guid isPermaLink="true">https://askpalantir.com/pages/why-is-palantir-stock-so-volatile.html</guid>
+      <description>Fast growth, a rich valuation, and politically sensitive contracts — why PLTR swings harder than most stocks.</description>
+      <category>Company &amp; Finance</category>
+    </item>
+  </channel>
+</rss>

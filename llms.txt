@@ -1,0 +1,71 @@
+# Ask Palantir
+
+> Independent, fully sourced explainer site about Palantir Technologies Inc. Not affiliated with, endorsed by, or sponsored by Palantir. Every factual claim is attributed to a named source (SEC filings, court documents, government contract records, or named news outlets). Contested topics are presented from multiple documented sides rather than given a house verdict. Nothing on this site is financial, legal, or investment advice.
+
+Site: https://askpalantir.com/
+Sitemap: https://askpalantir.com/sitemap.xml
+Contact: tyeaawill@gmail.com
+
+## Company, Products, Careers & Finance
+
+- [How Does Palantir Make Money?](https://askpalantir.com/pages/how-does-palantir-make-money.html): Palantir sells software subscriptions, not consulting, and posts 80%+ gross margins. Here's exactly how the business model works.
+- [How Does Palantir Report Earnings?](https://askpalantir.com/pages/how-does-palantir-report-earnings.html): The reporting cadence, and a recent pattern of beats.
+- [How Hard Is It to Get a Job at Palantir?](https://askpalantir.com/pages/how-hard-is-it-to-get-a-job-at-palantir.html): What the actual interview data shows, beyond the internet folklore.
+- [What Is Palantir's Stock Ticker, and How Do You Buy It?](https://askpalantir.com/pages/how-to-buy-palantir-stock.html): PLTR trades on Nasdaq. Here's exactly how to actually buy shares, step by step.
+- [How to Read Palantir's Financial Statements](https://askpalantir.com/pages/how-to-read-palantirs-financial-statements.html): 10-Ks, audits, and what the numbers actually mean.
+- [Is Palantir a Defense Contractor?](https://askpalantir.com/pages/is-palantir-a-defense-contractor.html): Yes — Palantir holds active U.S. and allied military, intelligence, and law enforcement contracts. Here's exactly which ones, sourced.
+- [What Is Palantir's Rio Tinto Partnership?](https://askpalantir.com/pages/palantir-rio-tinto-partnership.html): A 2021 mining-industry deal that's since expanded to cover Palantir's AI platform too.
+- [What Are Common Palantir Interview Questions?](https://askpalantir.com/pages/what-are-common-palantir-interview-questions.html): The actual question categories, not just difficulty stats.
+- [What Are Palantir's Key Financial Metrics?](https://askpalantir.com/pages/what-are-palantirs-key-financial-metrics.html): Rule of 40, adjusted FCF, and what Palantir wants you to look at.
+- [What Career Paths Exist at Palantir Beyond Engineering?](https://askpalantir.com/pages/what-career-paths-exist-at-palantir.html): Sales, legal, product, and more — the fuller roster of roles.
+- [What Do Analysts Say About Palantir Stock?](https://askpalantir.com/pages/what-do-analysts-say-about-palantir-stock.html): Attributed ratings and price targets — not our own recommendation.
+- [What Does Palantir Do?](https://askpalantir.com/pages/what-does-palantir-do.html): Palantir builds software that turns a company's or government's scattered data into one usable system. Here's exactly how, in plain terms.
+- [What Does Palantir Pay? A Look at Salaries and Compensation](https://askpalantir.com/pages/what-does-palantir-pay.html): Real salary data for engineers and beyond, from two different sources.
+- [What Does the Name "Palantir" Mean?](https://askpalantir.com/pages/what-does-the-name-palantir-mean.html): The Tolkien origin, and its double edge.
+- [What Government Contracts Does Palantir Hold?](https://askpalantir.com/pages/what-government-contracts-does-palantir-hold.html): A consolidated, factual reference list by agency.
+- [What Has Palantir's Revenue Growth Looked Like?](https://askpalantir.com/pages/what-has-palantirs-revenue-growth-looked-like.html): The actual numbers and trend, year by year.
+- [What Is a Forward Deployed Engineer?](https://askpalantir.com/pages/what-is-a-forward-deployed-engineer.html): Palantir's most talked-about job title — engineer, consultant, and problem-solver rolled into one role.
+- [What Is a Palantir AIP Bootcamp?](https://askpalantir.com/pages/what-is-a-palantir-aip-bootcamp.html): How Palantir turns a 5-day workshop into new customers.
+- [What Is Palantir AIP? A Deeper Look](https://askpalantir.com/pages/what-is-palantir-aip.html): How Palantir's AI actually acts on a company's real data, not just answers questions.
+- [What Is Palantir Apollo?](https://askpalantir.com/pages/what-is-palantir-apollo.html): The deployment layer that keeps Palantir's software running everywhere, even offline.
+- [What Is Palantir Foundry?](https://askpalantir.com/pages/what-is-palantir-foundry.html): The commercial platform now driving most of Palantir's growth, explained plainly.
+- [What Is Palantir Gotham?](https://askpalantir.com/pages/what-is-palantir-gotham.html): The original government and defense platform that started the whole company.
+- [What Is the Palantir Ontology?](https://askpalantir.com/pages/what-is-the-palantir-ontology.html): The data-mapping concept underneath every Palantir product, explained without the jargon.
+- [Who Are Palantir's Biggest Customers?](https://askpalantir.com/pages/who-are-palantirs-biggest-customers.html): From the U.S. Army to Airbus to the NHS — who actually pays Palantir, and for what.
+- [Who Founded Palantir?](https://askpalantir.com/pages/who-founded-palantir.html): Thiel, Karp, PayPal, and In-Q-Tel.
+- [Why Is Palantir Stock So Volatile?](https://askpalantir.com/pages/why-is-palantir-stock-so-volatile.html): Fast growth, a rich valuation, and politically sensitive contracts — why PLTR swings harder than most stocks.
+
+## Comparisons & Competitive Analysis
+
+- [Is Palantir a Monopoly?](https://askpalantir.com/pages/is-palantir-a-monopoly.html): No formal finding says so — but here's why the word keeps coming up anyway.
+- [Palantir vs. Anduril: What's the Actual Difference?](https://askpalantir.com/pages/palantir-vs-anduril.html): America's two most-watched defense-tech companies — now rivals and partners at once.
+- [Palantir vs. C3.ai: What's the Actual Difference?](https://askpalantir.com/pages/palantir-vs-c3ai.html): A widening financial gap between two AI platforms.
+- [Palantir vs. Databricks: What's the Actual Difference?](https://askpalantir.com/pages/palantir-vs-databricks.html): Data engineering versus operational AI — and now, strategic partners too.
+- [Palantir vs. Nvidia: A Financial Comparison](https://askpalantir.com/pages/palantir-vs-nvidia.html): Similar growth rates, wildly different valuations — the numbers, compared.
+- [Palantir vs. SAP: Rivals, or Something Else?](https://askpalantir.com/pages/palantir-vs-sap.html): From rivals to strategic partners on ERP modernization.
+- [Palantir vs. Snowflake: What's the Actual Difference?](https://askpalantir.com/pages/palantir-vs-snowflake.html): Two different bets on the enterprise data stack.
+- [Palantir vs. SpaceX: Government Alignment Compared](https://askpalantir.com/pages/palantir-vs-spacex-government-alignment.html): Different agencies, different dependency, different political exposure.
+- [Palantir vs. SpaceX: IPO Comparison](https://askpalantir.com/pages/palantir-vs-spacex-ipo-comparison.html): Direct listing vs. traditional IPO — how each company actually went public.
+- [Palantir vs. SpaceX: Management and Leadership SWOT](https://askpalantir.com/pages/palantir-vs-spacex-management-swot.html): Karp vs. Musk — strengths, weaknesses, opportunities, and threats.
+- [Palantir vs. SpaceX: Financial Risk and Reward Compared](https://askpalantir.com/pages/palantir-vs-spacex-risk-reward.html): Two very different risk profiles, not just two different companies.
+- [Palantir vs. SpaceX: Total Addressable Market (TAM) Comparison](https://askpalantir.com/pages/palantir-vs-spacex-tam-comparison.html): Two huge, contested market-size claims, compared side by side.
+- [Palantir vs. SpaceX: A Financial and Stock Comparison](https://askpalantir.com/pages/palantir-vs-spacex.html): Now a real stock-vs-stock comparison, since SpaceX's 2026 IPO.
+- [Palantir's Competitive Vulnerabilities, Benchmarked Against Its Biggest Tech Peers](https://askpalantir.com/pages/palantirs-competitive-vulnerabilities.html): Palantir's real risk factors, next to SpaceX, TSMC, Nvidia, Alphabet, and Meta.
+- [Palantir's Total Addressable Market, in Context](https://askpalantir.com/pages/palantirs-tam-in-context.html): How Palantir's claimed market opportunity stacks up against five major tech peers.
+- [Who Are Palantir's Competitors?](https://askpalantir.com/pages/who-are-palantirs-competitors.html): Snowflake, Anduril, Databricks, and more — the full competitive picture, by category.
+
+## Controversies (sourced from multiple sides)
+
+- [Does Palantir Spy on Americans?](https://askpalantir.com/pages/does-palantir-spy-on-americans.html): Palantir's CEO says no. The Intercept's NSA reporting says otherwise. Here are the actual documented facts on both sides.
+- [Does Palantir Work With ICE?](https://askpalantir.com/pages/does-palantir-work-with-ice.html): Yes. Palantir has held ICE contracts since 2011, including a new $30M ImmigrationOS deal. What's documented on both sides, fully sourced.
+- [Is Palantir Ethical? The Debate, From Both Sides](https://askpalantir.com/pages/is-palantir-ethical.html): Human rights groups say one thing, the company says another — the documented case on both sides.
+- [A Timeline of Palantir's Major Controversies](https://askpalantir.com/pages/palantir-controversies-timeline.html): From a 2011 ICE contract to a 2026 NHS fight — every major controversy, dated.
+- [What Is the Palantir NHS Contract Controversy?](https://askpalantir.com/pages/palantir-nhs-contract-controversy.html): The UK's £330m data-platform fight, explained.
+- [What Is Palantir's Contract With the IRS?](https://askpalantir.com/pages/what-is-palantirs-irs-contract.html): The IRS has paid Palantir $130M+ since 2018 to mine tax and financial records. Here's what that software actually does.
+- [What Was Palantir's Role in DOGE?](https://askpalantir.com/pages/what-was-palantirs-role-in-doge.html): Real federal ties, and one serious allegation that's still unproven.
+
+## Optional
+
+- [Frequently Asked Questions](https://askpalantir.com/faq.html): 35 short, sourced answers spanning every section of the site, each linking to the full article.
+- [About](https://askpalantir.com/about.html): How the site is sourced, funded, and corrected.
+- [People's Reflections](https://askpalantir.com/reflections.html): Open reader discussion space; comments are individual opinions, not the site's editorial position.
