@@ -67,5 +67,6 @@ Contact: tyeaawill@gmail.com
 ## Optional
 
 - [Frequently Asked Questions](https://askpalantir.com/faq.html): 35 short, sourced answers spanning every section of the site, each linking to the full article.
+- [Daily Fact-or-Fiction](https://askpalantir.com/play.html): A 30-second daily game of five true-or-false questions on documented Palantir facts, each answer linked to its source article.
 - [About](https://askpalantir.com/about.html): How the site is sourced, funded, and corrected.
 - [People's Reflections](https://askpalantir.com/reflections.html): Open reader discussion space; comments are individual opinions, not the site's editorial position.

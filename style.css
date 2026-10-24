@@ -304,3 +304,14 @@ hr { border: none; border-top: 1px solid var(--rule); margin: 2.4rem 0 1.4rem; }
   body { font-size: 16px; }
   main { padding: 2rem 1.2rem 3rem; }
 }
+
+
+/* Daily game call-to-action */
+.play-cta{display:inline-flex;flex-wrap:wrap;align-items:baseline;column-gap:.7rem;row-gap:.1rem;background:var(--accent);color:#fff;text-decoration:none;font-weight:700;padding:.75rem 1.1rem;border-radius:8px;line-height:1.2}
+.play-cta .play-cta-main{font-weight:700;white-space:nowrap}
+.play-cta .play-cta-sub{font-weight:400;font-size:.85em;opacity:.92}
+.play-cta:hover,.play-cta:focus-visible{filter:brightness(1.1);text-decoration:none;color:#fff}
+.hero-play{margin:1.4rem 0 0}
+.play-block{border-top:1px solid var(--rule);padding:1.4rem 0 1.6rem}
+.play-block-title{font-family:var(--mono);font-size:.78rem;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-soft);margin:0 0 .5rem}
+.play-block p{margin:0 0 .8rem}
