@@ -1,0 +1,233 @@
+(function () {
+  'use strict';
+  var DATA = JSON.parse(document.getElementById('bank').textContent);
+  var FACTS = DATA.facts, TITLES = DATA.titles;
+  var EPOCH = Date.UTC(__EPOCH__);   // puzzle #1 (build date)
+  var PER_DAY = 5, KEY = 'ap_game_v1';
+  var dl = (window.dataLayer = window.dataLayer || []);
+  function track(ev, o) { var p = { event: ev }, k; for (k in o) { p[k] = o[k]; } dl.push(p); }
+
+  /* ---------- deterministic daily selection (no backend) ---------- */
+  function puzzleNumber() {
+    var d = new Date();
+    var local = Date.UTC(d.getFullYear(), d.getMonth(), d.getDate());
+    return Math.max(1, Math.floor((local - EPOCH) / 86400000) + 1);
+  }
+  function mulberry32(a) {
+    return function () {
+      a |= 0; a = a + 0x6D2B79F5 | 0;
+      var t = Math.imul(a ^ a >>> 15, 1 | a);
+      t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t;
+      return ((t ^ t >>> 14) >>> 0) / 4294967296;
+    };
+  }
+  var permCache = [];
+  function buildPerm(c, prev) {
+    var r = mulberry32(7919 + c * 104729), a = [], i, j, t;
+    for (i = 0; i < FACTS.length; i++) { a.push(i); }
+    for (i = a.length - 1; i > 0; i--) { j = Math.floor(r() * (i + 1)); t = a[i]; a[i] = a[j]; a[j] = t; }
+    if (prev) {                       // never repeat a fact within one daily puzzle across a cycle boundary
+      var tail = prev.slice(-(PER_DAY - 1));
+      for (i = 0; i < PER_DAY; i++) {
+        if (tail.indexOf(a[i]) > -1) {
+          for (j = PER_DAY; j < a.length; j++) {
+            if (tail.indexOf(a[j]) === -1) { t = a[i]; a[i] = a[j]; a[j] = t; break; }
+          }
+        }
+      }
+    }
+    return a;
+  }
+  function permFor(c) {
+    for (var x = 0; x <= c; x++) { if (!permCache[x]) { permCache[x] = buildPerm(x, x > 0 ? permCache[x - 1] : null); } }
+    return permCache[c];
+  }
+  function coin(id) { var h = 5381, i; for (i = 0; i < id.length; i++) { h = ((h << 5) + h + id.charCodeAt(i)) | 0; } return h & 1; }
+  function questionsFor(n) {
+    var out = [], S = FACTS.length, k;
+    for (k = 0; k < PER_DAY; k++) {
+      var p = (n - 1) * PER_DAY + k, cycle = Math.floor(p / S), i = p % S;
+      var f = FACTS[permFor(cycle)[i]];
+      var truth = ((coin(f.id) ^ (cycle & 1)) === 0);   // each fact returns flipped on the next pass
+      out.push({ id: f.id, text: truth ? f.t : f.f, truth: truth, ex: f.ex, src: f.src });
+    }
+    return out;
+  }
+
+  /* ---------- local-only state ---------- */
+  function load() {
+    var s = null;
+    try { s = JSON.parse(localStorage.getItem(KEY)); } catch (e) { s = null; }
+    if (!s || typeof s !== 'object') { s = {}; }
+    s.streak = s.streak || 0; s.best = s.best || 0; s.last = s.last || 0;
+    s.played = s.played || 0; s.results = s.results || {}; s.prog = s.prog || null;
+    return s;
+  }
+  function save(s) { try { localStorage.setItem(KEY, JSON.stringify(s)); } catch (e) { /* private mode: play still works */ } }
+
+  /* ---------- tiny DOM helper ---------- */
+  function h(tag, attrs, kids) {
+    var e = document.createElement(tag), k;
+    if (attrs) { for (k in attrs) {
+      if (k === 'text') { e.textContent = attrs[k]; }
+      else if (k === 'class') { e.className = attrs[k]; }
+      else { e.setAttribute(k, attrs[k]); }
+    } }
+    (kids || []).forEach(function (c) { if (c) { e.appendChild(typeof c === 'string' ? document.createTextNode(c) : c); } });
+    return e;
+  }
+  var root = document.getElementById('game');
+  function clear() { while (root.firstChild) { root.removeChild(root.firstChild); } }
+  function srcLink(q) { return h('a', { href: 'pages/' + q.src + '.html', text: TITLES[q.src] || q.src }); }
+
+  /* ---------- game ---------- */
+  var n = puzzleNumber(), qs = questionsFor(n), st = load();
+  var answers = [], activeChoose = null, timer = null;
+  if (st.prog && st.prog.n === n && st.prog.answers) { answers = st.prog.answers.slice(0, PER_DAY); }
+  function liveStreak() { return st.last >= n - 1 ? st.streak : 0; }
+
+  function dots(cur) {
+    var wrap = h('div', { class: 'g-progress', 'aria-hidden': 'true' }), i, cls;
+    for (i = 0; i < PER_DAY; i++) {
+      cls = i < answers.length ? (answers[i] ? 'ok' : 'bad') : (i === cur ? 'cur' : 'todo');
+      wrap.appendChild(h('span', { class: 'g-dot ' + cls }));
+    }
+    return wrap;
+  }
+
+  function startView() {
+    clear(); activeChoose = null;
+    var live = liveStreak();
+    var btn = h('button', { class: 'g-btn g-primary', type: 'button', text: 'Start puzzle #' + n });
+    btn.addEventListener('click', function () {
+      track('game_start', { puzzle: n, ref: document.referrer || 'direct' });
+      askQuestion(0);
+    });
+    root.appendChild(h('div', { class: 'g-card' }, [
+      h('p', { class: 'g-kicker', text: 'Puzzle #' + n }),
+      h('p', { class: 'g-big', text: '5 statements. Fact or fiction?' }),
+      h('p', { text: 'About 30 seconds. Every answer links to its source.' }),
+      live > 0 ? h('p', { class: 'g-streak', text: 'Current streak: ' + live + (live === 1 ? ' day' : ' days') }) : null,
+      btn
+    ]));
+    btn.focus();
+  }
+
+  function askQuestion(i) {
+    clear();
+    var q = qs[i], locked = false;
+    var stmt = h('p', { class: 'g-statement', id: 'g-st', text: q.text });
+    var bFact = h('button', { class: 'g-btn g-choice', type: 'button' }, ['Fact ', h('small', { text: '(1)' })]);
+    var bFic = h('button', { class: 'g-btn g-choice', type: 'button' }, ['Fiction ', h('small', { text: '(2)' })]);
+    var fb = h('div', { class: 'g-feedback', role: 'status', 'aria-live': 'polite' });
+    var card = h('div', { class: 'g-card' }, [
+      h('p', { class: 'g-kicker', text: 'Question ' + (i + 1) + ' of ' + PER_DAY }),
+      dots(i), stmt,
+      h('div', { class: 'g-choices', role: 'group', 'aria-labelledby': 'g-st' }, [bFact, bFic]),
+      fb,
+      h('p', { class: 'g-hint', text: 'Tip: press 1 for Fact, 2 for Fiction.' })
+    ]);
+    root.appendChild(card);
+
+    function choose(val) {
+      if (locked) { return; }
+      locked = true; activeChoose = null;
+      var correct = (val === q.truth);
+      answers.push(correct ? 1 : 0);
+      st = load(); st.prog = { n: n, answers: answers.slice() }; save(st);
+      bFact.disabled = true; bFic.disabled = true;
+      var rightBtn = q.truth ? bFact : bFic, chosenBtn = val ? bFact : bFic;
+      rightBtn.className += ' is-right'; rightBtn.insertBefore(document.createTextNode('\u2713 '), rightBtn.firstChild);
+      if (!correct) { chosenBtn.className += ' is-wrong'; chosenBtn.insertBefore(document.createTextNode('\u2717 '), chosenBtn.firstChild); }
+      var dot = card.querySelectorAll('.g-dot')[i]; dot.className = 'g-dot ' + (correct ? 'ok' : 'bad');
+      var next = h('button', { class: 'g-btn g-primary', type: 'button', text: i < PER_DAY - 1 ? 'Next question' : 'See my result' });
+      next.addEventListener('click', function () { if (i < PER_DAY - 1) { askQuestion(i + 1); } else { finish(); } });
+      fb.appendChild(h('p', { class: 'g-verdict ' + (correct ? 'ok' : 'bad'), text: (correct ? '\u2713 Correct. ' : '\u2717 Not quite. ') + 'That statement is ' + (q.truth ? 'a FACT.' : 'FICTION.') }));
+      fb.appendChild(h('p', { text: q.ex }));
+      fb.appendChild(h('p', { class: 'g-source' }, ['Source: ', srcLink(q)]));
+      fb.appendChild(next);
+      next.focus();
+    }
+    bFact.addEventListener('click', function () { choose(true); });
+    bFic.addEventListener('click', function () { choose(false); });
+    activeChoose = choose;
+  }
+
+  document.addEventListener('keydown', function (e) {
+    if (!activeChoose || e.ctrlKey || e.metaKey || e.altKey) { return; }
+    if (e.key === '1') { activeChoose(true); } else if (e.key === '2') { activeChoose(false); }
+  });
+
+  function finish() {
+    var s = load(), score = answers.reduce(function (a, b) { return a + b; }, 0);
+    var prevLast = s.last || 0;
+    if (prevLast !== n) { s.streak = (prevLast === n - 1) ? (s.streak || 0) + 1 : 1; s.last = n; s.played = (s.played || 0) + 1; }
+    s.best = Math.max(s.best || 0, s.streak);
+    s.results[n] = { answers: answers.slice(), score: score };
+    Object.keys(s.results).forEach(function (k) { if (+k < n - 60) { delete s.results[k]; } });
+    s.prog = null; save(s); st = s;
+    track('game_complete', { puzzle: n, score: score, streak: s.streak });
+    resultView();
+  }
+
+  function untilMidnight() {
+    var d = new Date(), next = new Date(d.getFullYear(), d.getMonth(), d.getDate() + 1);
+    var m = Math.max(0, Math.floor((next - d) / 60000));
+    return Math.floor(m / 60) + 'h ' + (m % 60) + 'm';
+  }
+
+  function resultView() {
+    clear(); activeChoose = null;
+    var res = st.results[n], a = res.answers, score = res.score;
+    var grid = a.map(function (x) { return x ? '\uD83D\uDFE9' : '\uD83D\uDFE5'; }).join('');
+    var shareText = 'Ask Palantir Fact-or-Fiction #' + n + ' ' + score + '/' + PER_DAY + '\n' + grid + '\nhttps://askpalantir.com/play.html';
+    var msg = h('span', { class: 'g-copied', role: 'status', 'aria-live': 'polite' });
+    var copy = h('button', { class: 'g-btn g-primary', type: 'button', text: 'Copy result to share' });
+    copy.addEventListener('click', function () {
+      track('game_share', { puzzle: n, score: score });
+      function ok() { msg.textContent = ' Copied.'; }
+      function fallback() {
+        try { var ta = h('textarea', { 'aria-hidden': 'true' }); ta.value = shareText; document.body.appendChild(ta); ta.select(); document.execCommand('copy'); document.body.removeChild(ta); ok(); }
+        catch (e) { msg.textContent = ' Select the text above and copy it.'; }
+      }
+      if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(shareText).then(ok, fallback); } else { fallback(); }
+    });
+    var nextEl = h('p', { class: 'g-next', text: 'Next puzzle in ' + untilMidnight() + '.' });
+    if (timer) { clearInterval(timer); }
+    timer = setInterval(function () {
+      if (puzzleNumber() !== n) { location.reload(); return; }
+      nextEl.textContent = 'Next puzzle in ' + untilMidnight() + '.';
+    }, 30000);
+
+    var missed = [], seen = {};
+    qs.forEach(function (q, i) { if (!a[i] && !seen[q.src]) { seen[q.src] = 1; missed.push(q); } });
+    var review = h('details', { class: 'g-review' }, [h('summary', { text: "Review today's five statements" })]);
+    qs.forEach(function (q, i) {
+      review.appendChild(h('div', { class: 'g-item' }, [
+        h('p', { class: 'g-item-head', text: (a[i] ? '\u2713 ' : '\u2717 ') + q.text }),
+        h('p', { text: (q.truth ? 'Fact. ' : 'Fiction. ') + q.ex }),
+        h('p', { class: 'g-source' }, ['Source: ', srcLink(q)])
+      ]));
+    });
+    var brush = missed.length
+      ? h('p', { class: 'g-brush' }, ['Brush up on what you missed: '].concat(missed.reduce(function (acc, q, idx) { if (idx) { acc.push(' \u00b7 '); } acc.push(srcLink(q)); return acc; }, [])))
+      : h('p', { class: 'g-brush', text: 'Perfect score. Come back tomorrow for a new set.' });
+
+    root.appendChild(h('div', { class: 'g-card' }, [
+      h('p', { class: 'g-kicker', text: 'Puzzle #' + n + ' complete' }),
+      h('p', { class: 'g-score', text: score + ' / ' + PER_DAY }),
+      h('p', { class: 'g-grid', 'aria-label': score + ' out of ' + PER_DAY + ' correct', text: grid }),
+      h('p', { class: 'g-streak', text: 'Streak: ' + st.streak + (st.streak === 1 ? ' day' : ' days') + '  \u00b7  Best: ' + st.best }),
+      h('pre', { class: 'g-share', text: shareText }),
+      h('p', {}, [copy, msg]),
+      nextEl, brush, review,
+      h('p', { class: 'g-more' }, [h('a', { href: 'index.html', text: 'Browse all articles' })])
+    ]));
+  }
+
+  /* ---------- boot ---------- */
+  if (st.results[n]) { resultView(); }
+  else if (answers.length >= PER_DAY) { finish(); }
+  else if (answers.length > 0) { askQuestion(answers.length); }
+  else { startView(); }
+})();
